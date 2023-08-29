@@ -12,4 +12,9 @@ public class VagaService {
     public VagaService(VagaRepository vagaRepository) {
         this.vagaRepository = vagaRepository;
     }
+
+    @Transactional
+    public VagaModel save(VagaModel vagaModel) {
+        return vagaRepository.save(vagaModel);
+    }
 }

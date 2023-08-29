@@ -21,4 +21,13 @@ public class VagaController {
     public VagaController(VagaService vagaService) {
         this.vagaService = vagaService;
     }
+
+    @PostMapping
+    public ResponseEntity<Object> saveVaga(@RequestBody @Valid VagaDTO vagaDTO) {
+        var vagaModel = new VagaModel();
+        BeanUtils.copyProperties(vagaDTO, vagaModel);
+        vagaModel.setDataRegistro(LocalDateTime.now(ZoneId.of("UTC")));
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(vagaService.save(vagaModel));
+    }
 }
