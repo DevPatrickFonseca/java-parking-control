@@ -66,9 +66,6 @@ Para executar o projeto, certifique-se de ter o Docker instalado em sua máquina
    ```
 
 4. Utilize o Docker para executar o banco de dados PostgreSQL:
-   ```bash
-   docker compose up -d java_db
-   ```
 
 
 ---
