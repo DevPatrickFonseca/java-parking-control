@@ -5,6 +5,8 @@ import com.api.javaparkingcontrol.repositories.VagaRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class VagaService {
     final VagaRepository vagaRepository;
@@ -28,5 +30,9 @@ public class VagaService {
 
     public boolean existsByApartamentoAndBloco(String apartamento, String bloco) {
         return vagaRepository.existsByApartamentoAndBloco(apartamento, bloco);
+    }
+
+    public List<VagaModel> findAll() {
+        return vagaRepository.findAll();
     }
 }
