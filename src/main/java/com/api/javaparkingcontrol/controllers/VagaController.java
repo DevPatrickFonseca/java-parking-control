@@ -26,7 +26,7 @@ public class VagaController {
     }
 
     @PostMapping
-    public ResponseEntity<Object> saveVaga(@RequestBody @Valid VagaDTO vagaDTO) {
+    public ResponseEntity<Object> save(@RequestBody @Valid VagaDTO vagaDTO) {
         if (vagaService.existsByCarroPlaca(vagaDTO.getCarroPlaca())) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body("Conflito: Carro com Placa já está em uso!");
         }
@@ -65,5 +65,25 @@ public class VagaController {
         }
         vagaService.delete(vagaModelOptional.get());
         return ResponseEntity.status(HttpStatus.OK).body("Vaga deletada com sucesso!");
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Object> update(@PathVariable(value = "id") UUID id,
+                                         @RequestBody @Valid VagaDTO vagaDTO) {
+        Optional<VagaModel> vagaModelOptional = vagaService.findById(id);
+        if (!vagaModelOptional.isPresent()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Vaga não encontrada.");
+        }
+        var vagaModel = vagaModelOptional.get();
+        vagaModel.setNumeroVaga(vagaDTO.getNumeroVaga());
+        vagaModel.setCarroPlaca(vagaDTO.getCarroPlaca());
+        vagaModel.setCarroMarca(vagaDTO.getCarroMarca());
+        vagaModel.setCarroModelo(vagaDTO.getCarroModelo());
+        vagaModel.setCarroCor(vagaDTO.getCarroCor());
+        vagaModel.setNomeDoResponsavel(vagaDTO.getNomeDoResponsavel());
+        vagaModel.setApartamento(vagaDTO.getApartamento());
+        vagaModel.setBloco(vagaDTO.getBloco());
+        vagaService.save(vagaModel);
+        return ResponseEntity.status(HttpStatus.OK).body("Vaga atualizada com sucesso!");
     }
 }
