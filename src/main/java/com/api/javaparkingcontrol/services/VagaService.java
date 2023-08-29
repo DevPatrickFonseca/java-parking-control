@@ -6,6 +6,8 @@ import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class VagaService {
@@ -34,5 +36,9 @@ public class VagaService {
 
     public List<VagaModel> findAll() {
         return vagaRepository.findAll();
+    }
+
+    public Optional<VagaModel> findById(UUID id) {
+        return vagaRepository.findById(id);
     }
 }

@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -42,7 +44,16 @@ public class VagaController {
     }
 
     @GetMapping
-    public ResponseEntity<List<VagaModel>> getAllVagas() {
+    public ResponseEntity<List<VagaModel>> getAll() {
         return ResponseEntity.status(HttpStatus.OK).body(vagaService.findAll());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Object> getById(@PathVariable(value = "id") UUID id) {
+        Optional<VagaModel> vagaModelOptional = vagaService.findById(id);
+        if (!vagaModelOptional.isPresent()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Parking Spot not found.");
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(vagaModelOptional.get());
     }
 }
