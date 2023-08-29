@@ -17,4 +17,16 @@ public class VagaService {
     public VagaModel save(VagaModel vagaModel) {
         return vagaRepository.save(vagaModel);
     }
+
+    public boolean existsByCarroPlaca(String carroPlaca) {
+        return vagaRepository.existsByCarroPlaca(carroPlaca);
+    }
+
+    public boolean existsByNumeroVaga(String numeroVaga) {
+        return vagaRepository.existsByNumeroVaga(numeroVaga);
+    }
+
+    public boolean existsByApartamentoAndBloco(String apartamento, String bloco) {
+        return vagaRepository.existsByApartamentoAndBloco(apartamento, bloco);
+    }
 }
