@@ -52,8 +52,18 @@ public class VagaController {
     public ResponseEntity<Object> getById(@PathVariable(value = "id") UUID id) {
         Optional<VagaModel> vagaModelOptional = vagaService.findById(id);
         if (!vagaModelOptional.isPresent()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Parking Spot not found.");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Vaga não encontrada.");
         }
         return ResponseEntity.status(HttpStatus.OK).body(vagaModelOptional.get());
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Object> delete(@PathVariable(value = "id") UUID id) {
+        Optional<VagaModel> vagaModelOptional = vagaService.findById(id);
+        if (!vagaModelOptional.isPresent()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Vaga não encontrada.");
+        }
+        vagaService.delete(vagaModelOptional.get());
+        return ResponseEntity.status(HttpStatus.OK).body("Vaga deletada com sucesso!");
     }
 }

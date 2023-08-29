@@ -41,4 +41,9 @@ public class VagaService {
     public Optional<VagaModel> findById(UUID id) {
         return vagaRepository.findById(id);
     }
+
+    @Transactional
+    public void delete(VagaModel parkingSpotModel) {
+        vagaRepository.delete(parkingSpotModel);
+    }
 }
