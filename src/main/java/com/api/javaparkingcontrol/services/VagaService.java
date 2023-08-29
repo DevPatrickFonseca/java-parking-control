@@ -3,6 +3,8 @@ package com.api.javaparkingcontrol.services;
 import com.api.javaparkingcontrol.models.VagaModel;
 import com.api.javaparkingcontrol.repositories.VagaRepository;
 import jakarta.transaction.Transactional;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -34,8 +36,8 @@ public class VagaService {
         return vagaRepository.existsByApartamentoAndBloco(apartamento, bloco);
     }
 
-    public List<VagaModel> findAll() {
-        return vagaRepository.findAll();
+    public Page<VagaModel> findAll(Pageable pageable) {
+        return vagaRepository.findAll(pageable);
     }
 
     public Optional<VagaModel> findById(UUID id) {
