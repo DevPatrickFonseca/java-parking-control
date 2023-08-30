@@ -19,6 +19,7 @@ Este é um projeto simples de controle de estacionamento em uma API RESTFull.
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_springboot.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_hibernate.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_postgre.svg" width="60" fill="none" />
+    <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_postman.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_docker.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_intellij.svg" width="60" fill="none" />
     </a>
