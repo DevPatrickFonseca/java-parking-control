@@ -1,12 +1,12 @@
 <div align="center">
 
-# Java - Parking Control 🚗 
+# Java - Parking Control 🚗
 
 </div>
 
 ---
 
-Este é um projeto simples de controle de estacionamento.
+Este é um projeto simples de controle de estacionamento em uma API RESTFull.
 
 ---
 
@@ -21,11 +21,11 @@ Este é um projeto simples de controle de estacionamento.
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_hibernate.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_postgre.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_beaver_head.svg" width="60" fill="none" />
+    <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_postman.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_intellij.svg" width="60" fill="none" />
     </a>
   </p>
 </div>
-
 
 - Linguagem: Java 17
 - Framework: Spring Boot 3.1.3
@@ -67,6 +67,51 @@ Para executar o projeto, certifique-se de ter o Docker instalado em sua máquina
 
 4. Utilize o Docker para executar o banco de dados PostgreSQL:
 
+---
+
+## ✅ Testar de requisições
+
+Na pasta `client_requests` você encontra um arquivo que pode ser importado a um <strong>Client REST</strong> para testar as requisições.
+<br>
+<br>
+Este arquivo vem com exemplos de requisições já preenchidas para se testar.
+<br>
+<br>
+1. Requisições do tipo `POST`
+
+
+2. Requisições do tipo `GET`
+
+
+3. Requisições do tipo `DELETE`
+
+
+4. Requisições do tipo `PUT`
+
+
+5. Requisições do tipo `GET PAGEABLE`
+
+<br>
+
+<details>
+   <summary><b>Exemplo de entrada para cadastro de vaga</b></summary>
+
+   ```json
+   {
+      "numeroVaga": "205B",
+      "carroPlaca": "FUS1975",
+      "carroMarca": "Volkswagen",
+      "carroModelo": "Fusca 1300",
+      "carroCor": "Preto",
+      "nomeDoResponsavel": "Patrick Fonseca",
+      "apartamento": "205",
+      "bloco": "B"
+   }
+   ```
+      
+   </details>
+
+<br>
 
 ---
 
