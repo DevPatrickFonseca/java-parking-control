@@ -1,10 +1,9 @@
 <div align="center">
 
-# Java - Parking Control 🚗
+   <h1> Java - Parking Control 🚗</h1>
 
 </div>
 
----
 
 Este é um projeto simples de controle de estacionamento em uma API RESTFull.
 
@@ -14,14 +13,13 @@ Este é um projeto simples de controle de estacionamento em uma API RESTFull.
   <h2>🧰 Tecnologias, linguagens e ferramentas utilizadas:</h2>
   <p align="center">
     <a href="https://github.com/PFonsecaFV/PFonsecaFV">
-       <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_java.svg" width="60" fill="none" />
+    <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_java.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_maven.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_spring.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_springboot.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_hibernate.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_postgre.svg" width="60" fill="none" />
-    <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_beaver_head.svg" width="60" fill="none" />
-    <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_postman.svg" width="60" fill="none" />
+    <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_docker.svg" width="60" fill="none" />
     <img src="https://github.com/PFonsecaFV/PFonsecaFV/blob/main/src/icons/ic_intellij.svg" width="60" fill="none" />
     </a>
   </p>
@@ -38,7 +36,6 @@ Este é um projeto simples de controle de estacionamento em uma API RESTFull.
 - Docker
 - Global Custom Date
 
----
 
 ## <strong>🎯O que foi desenvolvido</strong><br />
 
@@ -67,7 +64,6 @@ Para executar o projeto, certifique-se de ter o Docker instalado em sua máquina
 
 4. Utilize o Docker para executar o banco de dados PostgreSQL:
 
----
 
 ## ✅ Testar de requisições
 
