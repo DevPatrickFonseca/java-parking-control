@@ -66,7 +66,7 @@ Para executar o projeto, certifique-se de ter o Docker instalado em sua máquina
 4. Utilize o Docker para executar o banco de dados PostgreSQL:
 
 
-## ✅ Testar de requisições
+## ✅ Teste de requisições
 
 Na pasta `client_requests` você encontra um arquivo que pode ser importado a um <strong>Client REST</strong> para testar as requisições.
 <br>
