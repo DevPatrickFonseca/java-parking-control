@@ -111,49 +111,71 @@ Este arquivo vem com exemplos de requisições já preenchidas para se testar.
    <summary><b>Alguns exemplos caso queira testar</b></summary>
 
    ```json
-   {
-      "numeroVaga": "200A",
-      "carroPlaca": "MAV1976",
-      "carroMarca": "Ford",
-      "carroModelo": "Maverick",
-      "carroCor": "Amarelo",
-      "nomeDoResponsavel": "Anderson Fonseca",
-      "apartamento": "200",
-      "bloco": "A"
-   },
-
-   {
-      "numeroVaga": "150B",
-      "carroPlaca": "OPA1978",
-      "carroMarca": "Chevrolet",
-      "carroModelo": "Opala",
-      "carroCor": "Cinza",
-      "nomeDoResponsavel": "Patrick Anderson",
-      "apartamento": "150",
-      "bloco": "B"
-   },
-
-   {
-      "numeroVaga": "130A",
-      "carroPlaca": "CAM2000",
-      "carroMarca": "Chevrolet",
-      "carroModelo": "Camaro",
-      "carroCor": "Amarelo",
-      "nomeDoResponsavel": "Vinícios Fonseca",
-      "apartamento": "125",
-      "bloco": "A"
-   },
-   
-   {
-      "numeroVaga": "170A",
-      "carroPlaca": "VER1994",
-      "carroMarca": "Chevrolet",
-      "carroModelo": "Veraneio",
-      "carroCor": "Marrom",
-      "nomeDoResponsavel": "José Fonseca",
-      "apartamento": "120",
-      "bloco": "A"
-   }
+	{
+		"numeroVaga": "205B",
+		"carroPlaca": "FUS1975",
+		"carroMarca": "Volkswagen",
+		"carroModelo": "Fusca 1300",
+		"carroCor": "Preto",
+		"nomeDoResponsavel": "Patrick Fonseca",
+		"apartamento": "205",
+		"bloco": "B"
+	}
+		
+	{
+		"numeroVaga": "160A",
+		"carroPlaca": "VER1991",
+		"carroMarca": "Chevrolet",
+		"carroModelo": "Veraneio",
+		"carroCor": "Marrom",
+		"nomeDoResponsavel": "José Fonseca",
+		"apartamento": "137",
+		"bloco": "B"
+	}
+		
+	{
+		"numeroVaga": "200A",
+		"carroPlaca": "MAV1976",
+		"carroMarca": "Ford",
+		"carroModelo": "Maverick",
+		"carroCor": "Amarelo",
+		"nomeDoResponsavel": "Anderson Fonseca",
+		"apartamento": "200",
+		"bloco": "A"
+	}
+		
+	{
+		"numeroVaga": "170A",
+		"carroPlaca": "CAM2000",
+		"carroMarca": "Chevrolet",
+		"carroModelo": "Camaro",
+		"carroCor": "Amarelo",
+		"nomeDoResponsavel": "Vinícios Fonseca",
+		"apartamento": "120",
+		"bloco": "A"
+	}
+		
+	{
+		"numeroVaga": "150A",
+		"carroPlaca": "VER1989",
+		"carroMarca": "Chevrolet",
+		"carroModelo": "Veraneio",
+		"carroCor": "Azul",
+		"nomeDoResponsavel": "Fonseca Anderson",
+		"apartamento": "180",
+		"bloco": "A"
+	}
+		
+	{ 
+		"numeroVaga": "150B",
+		"carroPlaca": "OPA1978",
+		"carroMarca": "Chevrolet",
+		"carroModelo": "Opala",
+		"carroCor": "Cinza",
+		"nomeDoResponsavel": "Patrick Anderson",
+		"apartamento": "150",
+		"bloco": "B"
+	}
    ```
 
    </details>
