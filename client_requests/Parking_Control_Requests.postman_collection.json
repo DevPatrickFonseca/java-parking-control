@@ -1,0 +1,517 @@
+{
+	"info": {
+		"_postman_id": "ae680db7-bd25-4adb-b5ad-2b91a5c90e95",
+		"name": "Parking_Control_Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29578706"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "vaga (VÁLIDA)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroVaga\": \"199B\",\r\n    \"carroPlaca\": \"MAV1971\",\r\n    \"carroMarca\": \"Ford\",\r\n    \"carroModelo\": \"Maverick\",\r\n    \"carroCor\": \"Amarelo\",\r\n    \"nomeDoResponsavel\": \"Anderson Fonseca\",\r\n    \"apartamento\": \"199\",\r\n    \"bloco\": \"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vaga (INVÁLIDA)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carroPlaca\": \"VER1992\",\r\n    \"carroMarca\": \"Chevrolet\",\r\n    \"carroModelo\": \"Veraneio\",\r\n    \"carroCor\": \"Marrom\",\r\n    \"nomeDoResponsavel\": \"José Fonseca\",\r\n    \"apartamento\": \"120\",\r\n    \"bloco\": \"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vaga (APARTAMENTO E BLOCO EM USO)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroVaga\": \"140A\",\r\n    \"carroPlaca\": \"VER1991\",\r\n    \"carroMarca\": \"Chevrolet\",\r\n    \"carroModelo\": \"Veraneio\",\r\n    \"carroCor\": \"Marrom\",\r\n    \"nomeDoResponsavel\": \"José Fonseca\",\r\n    \"apartamento\": \"120\",\r\n    \"bloco\": \"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vaga (PLACA EM USO)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroVaga\": \"160A\",\r\n    \"carroPlaca\": \"VER1991\",\r\n    \"carroMarca\": \"Chevrolet\",\r\n    \"carroModelo\": \"Veraneio\",\r\n    \"carroCor\": \"Marrom\",\r\n    \"nomeDoResponsavel\": \"José Fonseca\",\r\n    \"apartamento\": \"137\",\r\n    \"bloco\": \"B\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vaga (VAGA EM USO)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroVaga\": \"170A\",\r\n    \"carroPlaca\": \"VER1992\",\r\n    \"carroMarca\": \"Chevrolet\",\r\n    \"carroModelo\": \"Veraneio\",\r\n    \"carroCor\": \"Marrom\",\r\n    \"nomeDoResponsavel\": \"José Fonseca\",\r\n    \"apartamento\": \"120\",\r\n    \"bloco\": \"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "vagas (TODAS)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vaga (ID VÁLIDO)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento/93c8f307-5407-43d8-b18f-c6808d6d3b65",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento",
+								"93c8f307-5407-43d8-b18f-c6808d6d3b65"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vaga (ID INVÁLIDO)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento/93c8f307-5407-43d8-b18f-c6808",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento",
+								"93c8f307-5407-43d8-b18f-c6808"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "atualizar vaga (ID VÁLIDO)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"numeroVaga\": \"150B\",\r\n   \"carroPlaca\": \"OPA1978\",\r\n   \"carroMarca\": \"Chevrolet\",\r\n   \"carroModelo\": \"Opala\",\r\n   \"carroCor\": \"Cinza\",\r\n   \"nomeDoResponsavel\": \"Patrick Anderson\",\r\n   \"apartamento\": \"150\",\r\n   \"bloco\": \"B\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento/cfa4ba5c-9c69-4016-a639-11a590f5389f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento",
+								"cfa4ba5c-9c69-4016-a639-11a590f5389f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "atualizar vaga (ID INVÁLIDO)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroVaga\": \"199B\",\r\n    \"carroPlaca\": \"MAV1971\",\r\n    \"carroMarca\": \"ATUALIZAR\",\r\n    \"carroModelo\": \"ATUALIZAR\",\r\n    \"carroCor\": \"ATUALIZAR\",\r\n    \"nomeDoResponsavel\": \"Anderson Fonseca\",\r\n    \"apartamento\": \"199\",\r\n    \"bloco\": \"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento/cfa4ba5c-9c69-4016-a639-11a590f538HU",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento",
+								"cfa4ba5c-9c69-4016-a639-11a590f538HU"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "vaga (ID VÁLIDO)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento/f406d8bd-2257-4428-a309-1062737d52e3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento",
+								"f406d8bd-2257-4428-a309-1062737d52e3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vaga (ID JÁ DELETADO)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento/223ada36-2c5a-420b-9312-a2c3016ba265",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento",
+								"223ada36-2c5a-420b-9312-a2c3016ba265"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vaga (ID INVÁLIDO)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento/223ada36-220b-9312-a2c3016ba265",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento",
+								"223ada36-220b-9312-a2c3016ba265"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET PAGEABLE",
+			"item": [
+				{
+					"name": "vagas (TODAS) page 0",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento?page=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vagas (TODAS) page 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vagas (TODAS) page 0 size 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vagas (TODAS) page 1 size 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vagas (page 1 size 1 sor DESC)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vagas (page 1 size 1 sor ASC)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vaga-estacionamento?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaga-estacionamento"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aplicação rodando",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		}
+	]
+}
