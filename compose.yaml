@@ -6,10 +6,8 @@ services:
     image: 'postgres:12' # Compatible with most operating systems
     ports:
       - '5432:5432'
-    environment:
-      POSTGRES_PASSWORD: 'password'
-      POSTGRES_USER: 'postgres'
-      POSTGRES_DB: 'parking-control-db'
+    env_file:
+      - env.properties
     volumes:
       - pgdata:/var/lib/postgresql/data
 volumes:
