@@ -3,13 +3,11 @@ package com.api.javaparkingcontrol.services;
 import com.api.javaparkingcontrol.models.VagaModel;
 import com.api.javaparkingcontrol.repositories.VagaRepository;
 import jakarta.transaction.Transactional;
+import java.util.Optional;
+import java.util.UUID;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
 
 @Service
 public class VagaService {

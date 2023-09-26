@@ -88,6 +88,11 @@ Este arquivo vem com exemplos de requisições já preenchidas para se testar.
 5. Requisições do tipo `GET PAGEABLE`
 
 <br>
+<div align="center">
+   <img width="800" alt="Exemplos de pull request" src="./images/swagger_api_requests.png">
+</div>
+
+<br>
 
 <details>
    <summary><b>Exemplo de entrada para cadastro de vaga</b></summary>
